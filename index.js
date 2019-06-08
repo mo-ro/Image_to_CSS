@@ -50,7 +50,6 @@ var generateShadow = function(data, newData) {
 var resizeImage = async function(img) {
   if(img.width > window.innerWidth) {
     document.getElementById("wrapper").style.width = `${img.width}px`
-    document.getElementById("wrapper").style.height = `${img.height}px`
   }
   await document.getElementById("loading").classList.remove("hollow-dots-spinner");
 }
