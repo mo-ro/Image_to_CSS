@@ -49,8 +49,6 @@ var generateShadow = function(data, newData) {
 
 var resizeImage = async function(img) {
   if(img.width > window.innerWidth) {
-    var ratio = window.innerWidth / img.width;
-    // document.getElementById("wrapper").style.transform = `scale(${ratio})`
     document.getElementById("wrapper").style.width = `${img.width}px`
     document.getElementById("wrapper").style.height = `${img.height}px`
   }
